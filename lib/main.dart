@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
+import 'package:list_viewproject/models/books_list.dart';
 import 'package:list_viewproject/pages/homepage.dart';
 import 'package:list_viewproject/pages/loginpage.dart';
 
-
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -14,30 +13,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //  home: HomeScreen(),
-
-        themeMode:  ThemeMode.light,
+        themeMode: ThemeMode.light,
         theme: ThemeData(
             primarySwatch: Colors.deepPurple,
             appBarTheme: AppBarTheme(
-                color: Colors.white,
+                elevation: 0.0,
+                color: Colors.orange,
                 iconTheme: IconThemeData(color: Colors.black),
-                textTheme: Theme.of(context).textTheme
-            )
-        ),
-        darkTheme: ThemeData(
-            brightness: Brightness.dark,
-            primarySwatch: Colors.amber
-        ),
-
+                textTheme: Theme.of(context).textTheme)),
+        darkTheme:
+            ThemeData(brightness: Brightness.dark, primarySwatch: Colors.amber),
         initialRoute: "/homepage",
         routes: {
           "/homepage": (context) => HomePage(),
           "/loginpage": (context) => LoginPage()
-        }
-    );
+
+        });
   }
+
 }
-
-
-
