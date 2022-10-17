@@ -20,9 +20,9 @@ class LoginPage extends StatelessWidget {
         key: formkey,
         child: Column(
           children: [
-            Image.asset("assets/images/log.png"),
-            SizedBox(height: 20,),
-            Text("Welcome", style: TextStyle(fontSize: 30),),
+            Image.asset("assets/images/wall.jpeg"),
+            // SizedBox(height: 20,),
+            // Text("Welcome", style: TextStyle(fontSize: 30, color: Colors.white),),
             SizedBox(height: 30,),
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -60,7 +60,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(height: 30,),
                   ElevatedButton(
-                    child: Text("Login"),
+                    child: Text("Login", style: TextStyle(color: Colors.white),),
                     style: TextButton.styleFrom(minimumSize: Size(110, 35)),
                     onPressed: () {
                       if(formkey.currentState!.validate()){

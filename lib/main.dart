@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:list_viewproject/models/books_list.dart';
+import 'package:list_viewproject/pages/booksDetails.dart';
 import 'package:list_viewproject/pages/homepage.dart';
 import 'package:list_viewproject/pages/loginpage.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         themeMode: ThemeMode.light,
         theme: ThemeData(
-            primarySwatch: Colors.deepPurple,
+            primarySwatch: Colors.orange,
             appBarTheme: AppBarTheme(
                 elevation: 0.0,
                 color: Colors.orange,
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         initialRoute: "/homepage",
         routes: {
           "/homepage": (context) => HomePage(),
-          "/loginpage": (context) => LoginPage()
+          "/loginpage": (context) => LoginPage(),
 
         });
   }
